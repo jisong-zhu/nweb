@@ -1,0 +1,28 @@
+server:
+    port: 3000
+
+enablePageChecker: false
+jade_dir: 'app/pages'
+less_dir: 'app/pages'
+js_dir: 'app'
+ts_dir: 'app'
+page_ext: '.pug'
+vendor:
+    js:
+        - "./jquery.js"
+        - "./bootstrap/bootstrap.js"
+    css:
+        - "./font-awesome/font-awesome.css"
+        - "./bootstrap/bootstrap.css"
+    dev:
+        js:
+        css:
+    release:
+        js:
+        css:
+pages:
+    index:
+        useGlobalVendor: true
+        js:
+            - 'pages/index.js'
+            - 'components/**/*.js'
