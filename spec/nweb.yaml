@@ -1,0 +1,26 @@
+server:
+    port: 3000
+vendor:
+    js:
+        - "./jquery.js"
+        - "./bootstrap/bootstrap-hover-dropdown.js"
+        - "./bootstrap/bootstrap.js"
+    css:
+        - "./font-awesome/font-awesome.css"
+        - "./bootstrap/bootstrap.css"
+    dev:
+        js:
+          - "1.js"
+          - "2.js"
+        css:
+          - "1.css"
+          - "2.css"
+    release:
+        js:
+          - "1.min.js"
+          - "2.min.js"
+        css:
+          - "1.min.css"
+          - "2.min.css"
+enc:
+    - './out/assets/js/test.js'
