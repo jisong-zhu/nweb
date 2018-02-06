@@ -1,34 +1,12 @@
-/* eslint-disable unicorn/no-process-exit */
-const util = require('util')
-const fs = require('fs')
-const url = require('url')
-const chalk = require('chalk')
-const notifier = require('node-notifier')
-const co = require('co')
-const stripAnsi = require('strip-ansi')
-const tildify = require('tildify')
-const merge = require('lodash/merge')
-const chokidar = require('chokidar')
-const opn = require('opn')
-const AppError = require('../lib/app-error')
-const {
-  cwd,
-    ownDir,
-    unspecifiedAddress,
-    readPkg,
-    deleteCache,
-    arrify,
-    localRequire
-} = require('../lib/utils')
-const poi = require('../lib')
-const logger = require('../lib/logger')
+import gulpLoadPlugin from 'gulp-load-plugins';
+import logger from '../lib/utils/logger';
+const $ = gulpLoadPlugin();
 
-module.exports = function (cliOptions) {
-}
+export const start = (cliOptions) => {
 
-module.exports.handleError = handleError
+};
 
-function handleError(err) {
+export const handleError = (err) => {
     console.log();
     if (err.name === 'AppError') {
         console.error(chalk.red(err.message));
@@ -40,4 +18,4 @@ function handleError(err) {
     logger.error('Failed to start!');
     console.log();
     process.exit(1);
-}
+};

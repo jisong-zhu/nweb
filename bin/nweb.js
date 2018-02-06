@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+'use strict';
 import CLI from 'cac';
 
 function getOpts(input, flags) {
