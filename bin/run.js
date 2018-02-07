@@ -32,7 +32,7 @@ runner.start = (options) => {
                 .initComponents()
                 .run();
             break;
-        case 'babel-releae':
+        case 'babel-release':
             app.babelRelease()
                 .initComponents()
                 .run();
