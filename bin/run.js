@@ -3,7 +3,6 @@ const chalk = require('chalk');
 const stripAnsi = require('strip-ansi');
 const $ = require('gulp-load-plugins')();
 const logger = require('../lib/utils/logger');
-const app = require('../lib/app');
 const ConfigUtils = require('../lib/utils/config-utils');
 const Package = require('../package.json');
 const runner = module.exports = {};
@@ -15,6 +14,8 @@ runner.start = (options) => {
 
     let $config = ConfigUtils.getConfig();
     console.log('项目当前版本：', $.util.colors.green($config.version));
+    // 注意：这个APP必须在这个地方require，否则取不到config的值
+    let app = require('../lib/app');
     switch (options.mode) {
         case 'debug':
             app.debug()
