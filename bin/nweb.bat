@@ -1,2 +1,2 @@
 ::echo off
-node %~dp0..\lib\cli.js %cd% %*
+node %~dp0..\lib\index.js %cd% %*

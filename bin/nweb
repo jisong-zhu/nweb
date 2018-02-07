@@ -1,3 +1,3 @@
 #!/bin/bash
 sh_dir=$(dirname $_)
-node $sh_dir/../lib/cli.js `pwd` $*
+node $sh_dir/../lib/index.js `pwd` $*
