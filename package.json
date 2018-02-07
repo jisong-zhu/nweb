@@ -6,7 +6,9 @@
     "engines": {
         "node": ">= 8"
     },
-    "bin": "bin/cli.js",
+    "bin": {
+        "nweb":"bin/cli.js"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/jisong-zhu/nweb.git"
