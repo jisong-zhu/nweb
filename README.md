@@ -1,4 +1,8 @@
-# 介绍
+## 标记
+
+[![NPM version](https://img.shields.io/npm/v/nweb.js.svg?style=flat-square)](https://npmjs.com/package/nweb.js) [![NPM downloads](https://img.shields.io/npm/dm/nweb.js.svg?style=flat-square)](https://npmjs.com/package/nweb.js)
+
+## 介绍
 
 NWeb是一款帮助你快速搭建Web项目，并且支持代码打包发布的工具。
 
@@ -26,6 +30,13 @@ nweb -v
 ```
 nweb init -t templates-web -p myApp
 ```
+
+然后进入到刚创建成功的项目`cd myApp`，在`myApp`中运行命令启动项目：
+```
+nweb debug
+```
+
+现在，可以通过浏览器访问`http://localhost:3000/`
 
 默认配置：
 
