@@ -38,6 +38,13 @@ nweb debug
 
 现在，可以通过浏览器访问`http://localhost:3000/`
 
+### 命令介绍
+
+命令行运行`nweb`可以查看帮助信息，会输出所有可使用的命令：
+<p align="center">
+<img src="https://raw.githubusercontent.com/jisong-zhu/nweb/master/img/command.png" alt="帮助信息"/>
+</p>
+
 默认配置：
 
 ```
