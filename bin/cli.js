@@ -61,7 +61,7 @@ cli.command('component-release', {
     alias: 'cr'
 }, createHandler('component-release'));
 
-cli.command('init', '从模板创建nweb应用', (input, flags) => {
+cli.command('init', '从模板创建nweb应用，默认创建基础Web应用模板：templates-web。', (input, flags) => {
         let options = getOpts(input, flags, 'init');
         require('../lib/xserver-cli')(options.template, options.project);
     })
